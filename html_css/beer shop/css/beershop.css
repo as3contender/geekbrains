@@ -2,7 +2,8 @@ body {
   font: 12pt "Franklin Gothic Medium", cursive;
   background-image: url(../img/backgound.jpg);
   color: aliceblue;
-  margin-left: 50px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .img_logo {
@@ -54,7 +55,7 @@ a {
 
 .beer h3 {
   color: antiquewhite;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -74,7 +75,19 @@ a {
 }
 
 .beer .beer_propertys {
-  color: #b0b0b0;
-  font-size: 14px;
-  list-style-image: url(../img/book.png); /* Путь к изображению маркера */
+  color: #d0d0d0;
+  font-size: 16px;
+  list-style-image: url(../img/marker.png);
+  /* Путь к изображению маркера */
+}
+
+.map,
+.form {
+  float: left;
+  margin: 20px;
+}
+
+.form input {
+  border-bottom: 1px solid #eee;
+  font: 12pt "Franklin Gothic Medium", cursive;
 }
