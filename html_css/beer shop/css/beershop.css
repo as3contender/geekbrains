@@ -6,9 +6,18 @@ body {
   width: 80%;
 }
 
+.main {
+  margin-left: 2%;
+}
+
 .img_logo {
   width: 150px;
   height: 150px;
+  outline: 1px solid #777;
+}
+
+.img_logo:hover {
+  outline-style: none;
 }
 
 input {
@@ -33,13 +42,44 @@ a {
   color: aliceblue
 }
 
+.menu li:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.menu li:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .menu li {
   display: inline-block;
-  margin-left: 20px;
+  border: 2px outset aliceblue;
+}
+
+.div_logo {
+  float: left;
+}
+
+.logo {
+  width: 110px;
+  height: 100px;
+}
+
+.menu li:hover {
+  border-color: bisque;
+}
+
+.menu div {
+  padding: 10px;
 }
 
 .menu a {
   font-size: 24px;
+}
+
+.menu a:hover {
+  color: bisque;
 }
 
 .catalog li {
@@ -74,11 +114,9 @@ a {
   text-align: left;
 }
 
-.beer .beer_propertys {
-  color: #d0d0d0;
-  font-size: 16px;
-  list-style-image: url(../img/marker.png);
-  /* Путь к изображению маркера */
+.beer p::first-letter {
+  font: 16pt "Arial", fantasy;
+  color: antiquewhite;
 }
 
 .map,
@@ -90,4 +128,36 @@ a {
 .form input {
   border-bottom: 1px solid #eee;
   font: 12pt "Franklin Gothic Medium", cursive;
+}
+
+.form input:focus {
+  text-transform: capitalize;
+}
+
+.form textarea {
+  text-transform: capitalize;
+}
+
+.email:focus {
+  color: blue;
+  background-color: beige;
+}
+
+.beer_propertys {
+  border-spacing: 10px;
+  color: #d0d0d0;
+  font-size: 16px;
+}
+
+.beer_propertys td {
+  text-align: center;
+}
+
+.beer_propertys tr td:first-child {
+  padding-left: 10px;
+  text-align: left;
+}
+
+.beer_propertys tr:first-child {
+  height: 50px;
 }
