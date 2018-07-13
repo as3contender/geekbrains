@@ -1,9 +1,33 @@
 body {
   font: 12pt "Franklin Gothic Medium", cursive;
   background-image: url(../img/backgound.jpg);
+
   color: aliceblue;
+}
+
+.container {
   margin: 0 auto;
+  padding: 10px;
   width: 80%;
+  /*border: 5px double aliceblue*/
+}
+
+.header {
+  height: 120px;
+}
+
+.header .div_logo {
+  margin: 5px 0 0 5px;
+}
+
+.footer {
+  height: 120px;
+  background: url(../img/footer.png) no-repeat;
+}
+
+.footer p {
+  text-align: right;
+  margin: 10px 10px 0 0;
 }
 
 .main {
@@ -39,7 +63,15 @@ li {
 a {
   text-decoration: none;
   font: 12pt "Franklin Gothic Medium", cursive;
-  color: aliceblue
+  color: aliceblue;
+}
+
+.m1 {
+  display: inline-block;
+}
+
+.menu {
+  float: right;
 }
 
 .menu li:first-child {
@@ -57,15 +89,6 @@ a {
   border: 2px outset aliceblue;
 }
 
-.div_logo {
-  float: left;
-}
-
-.logo {
-  width: 110px;
-  height: 100px;
-}
-
 .menu li:hover {
   border-color: bisque;
 }
@@ -80,6 +103,15 @@ a {
 
 .menu a:hover {
   color: bisque;
+}
+
+.div_logo {
+  display: inline-block;
+}
+
+.logo {
+  width: 110px;
+  height: 100px;
 }
 
 .catalog li {
@@ -160,4 +192,51 @@ a {
 
 .beer_propertys tr:first-child {
   height: 50px;
+}
+
+.short_property {
+  float: right;
+}
+
+.beer {
+  width: 80%;
+}
+
+.beer_1 {
+  display: inline-block;
+  width: 50%;
+}
+
+.beer_2 {
+  clear: both;
+}
+
+.button_bay {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px outset aliceblue;
+  border-radius: 15px;
+  box-shadow: 0 9px aliceblue;
+}
+
+.button_bay:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: bisque;
+  color: bisque;
+}
+
+
+.button_bay:active {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  border-color: bisque;
+  color: bisque;
 }
